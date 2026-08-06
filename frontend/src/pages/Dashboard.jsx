@@ -604,14 +604,18 @@ export default function Dashboard() {
             
              {activeTab === 'workspace' && (
                <>
-                 <div className="flex items-center justify-between mb-6">
-                   <div>
-                     <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm">Workspace</h3>
-                     <p className="text-gray-700 font-medium mt-1">Explore upcoming hackathons and participants.</p>
+                 <div className="mb-6 bg-white/30 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-md">
+                   <div className="flex items-center justify-between">
+                     <div>
+                       <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
+                         <LayoutDashboard className="text-blue-600" size={32} /> Workspace
+                       </h3>
+                       <p className="text-gray-900 font-bold text-base mt-2">Explore upcoming hackathons and participants.</p>
+                     </div>
                    </div>
                  </div>
 
-                 <div className="flex gap-4 border-b border-white/50 mb-8 pb-1 bg-white/30 backdrop-blur-md px-4 pt-2 rounded-t-xl">
+                 <div className="inline-flex gap-4 mb-8 bg-white/30 backdrop-blur-md border border-white/40 px-4 pt-3 pb-0 rounded-2xl shadow-md">
                    <button onClick={() => setWorkspaceTab('browse')} className={`pb-3 px-2 text-sm font-bold transition-all border-b-2 ${workspaceTab === 'browse' ? 'border-blue-600 text-blue-700' : 'border-transparent text-gray-700 hover:text-gray-900'}`}>Explore Hackathons</button>
                    <button onClick={() => setWorkspaceTab('teams')} className={`pb-3 px-2 text-sm font-bold transition-all border-b-2 ${workspaceTab === 'teams' ? 'border-blue-600 text-blue-700' : 'border-transparent text-gray-700 hover:text-gray-900'}`}>Explore Teams</button>
                    <button onClick={() => setWorkspaceTab('participants')} className={`pb-3 px-2 text-sm font-bold transition-all border-b-2 ${workspaceTab === 'participants' ? 'border-blue-600 text-blue-700' : 'border-transparent text-gray-700 hover:text-gray-900'}`}>Explore Participants</button>
@@ -731,17 +735,21 @@ export default function Dashboard() {
 
              {activeTab === 'myteam' && (
                <>
-                 <div className="flex items-center justify-between mb-6">
-                   <div>
-                     <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm">My Teams</h3>
-                     <p className="text-gray-700 font-medium mt-1">Manage your active projects and team requests.</p>
+                 <div className="mb-6 bg-white/30 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-md">
+                   <div className="flex items-center justify-between">
+                     <div>
+                       <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
+                         <Users className="text-indigo-600" size={32} /> My Teams
+                       </h3>
+                       <p className="text-gray-900 font-bold text-base mt-2">Manage your active projects and team requests.</p>
+                     </div>
+                     <button onClick={() => setShowProjectModal(true)} className="flex items-center gap-2 bg-white/80 hover:bg-white backdrop-blur-md text-gray-900 px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-xl border border-white">
+                       <Plus size={18} /> New Project
+                     </button>
                    </div>
-                   <button onClick={() => setShowProjectModal(true)} className="flex items-center gap-2 bg-white/80 hover:bg-white backdrop-blur-md text-gray-900 px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg hover:shadow-xl border border-white">
-                     <Plus size={18} /> New Project
-                   </button>
                  </div>
 
-                 <div className="flex gap-4 border-b border-white/50 mb-8 pb-1 bg-white/30 backdrop-blur-md px-4 pt-2 rounded-t-xl">
+                 <div className="inline-flex gap-4 mb-8 bg-white/30 backdrop-blur-md border border-white/40 px-4 pt-3 pb-0 rounded-2xl shadow-md">
                     <button onClick={() => { setMyTeamsTab('my_projects'); }} className={`pb-3 px-2 text-sm font-bold transition-all border-b-2 ${myTeamsTab === 'my_projects' ? 'border-blue-600 text-blue-700' : 'border-transparent text-gray-700 hover:text-gray-900'}`}>My Projects</button>
                     <button 
                       onClick={() => { setMyTeamsTab('invitations'); }}
@@ -965,11 +973,15 @@ export default function Dashboard() {
 
             {activeTab === 'aimatchmaker' && (
               <>
-                 <div className="mb-8">
-                   <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
-                     <BrainCircuit className="text-purple-600" size={32} /> AI Matchmaker
-                   </h3>
-                   <p className="text-gray-700 font-medium mt-1">Generate teammate recommendations based on your specific project needs.</p>
+                 <div className="mb-6 bg-white/30 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-md">
+                   <div className="flex items-center justify-between">
+                     <div>
+                       <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
+                         <BrainCircuit className="text-purple-600" size={32} /> AI Matchmaker
+                       </h3>
+                       <p className="text-gray-900 font-bold text-base mt-2">Generate teammate recommendations based on your specific project needs.</p>
+                     </div>
+                   </div>
                  </div>
                  
                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -1065,7 +1077,7 @@ export default function Dashboard() {
 
             {activeTab === 'skillverification' && (
               <>
-                <div className="mb-8 bg-white/60 backdrop-blur-xl border border-white/80 p-6 rounded-2xl shadow-lg">
+                <div className="mb-6 bg-white/30 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
@@ -1127,11 +1139,15 @@ export default function Dashboard() {
 
             {activeTab === 'saveditem' && (
               <>
-                 <div className="mb-8">
-                   <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
-                     <FolderHeart className="text-pink-500" size={32} /> Saved Items
-                   </h3>
-                   <p className="text-gray-700 font-medium mt-2">Events and profiles you've bookmarked.</p>
+                 <div className="mb-6 bg-white/30 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-md">
+                   <div className="flex items-center justify-between">
+                     <div>
+                       <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
+                         <FolderHeart className="text-pink-500" size={32} /> Saved Items
+                       </h3>
+                       <p className="text-gray-900 font-bold text-base mt-2">Events and profiles you've bookmarked.</p>
+                     </div>
+                   </div>
                  </div>
 
                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1204,13 +1220,19 @@ export default function Dashboard() {
 
             {activeTab === 'setting' && (
               <>
+                <div className="mb-6 bg-white/30 backdrop-blur-md border border-white/40 px-6 py-4 rounded-2xl shadow-md">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm flex items-center gap-3">
+                        <Settings className="text-gray-700" size={32} /> Settings
+                      </h3>
+                      <p className="text-gray-900 font-bold text-base mt-2">
+                        Manage your personal profile, GitHub integration, and core skills.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <div className="max-w-3xl mx-auto">
-                  <h3 className="text-3xl font-black tracking-tight text-gray-900 drop-shadow-sm mb-2 flex items-center gap-3">
-                    <Settings className="text-gray-700" size={32} /> Settings
-                  </h3>
-                  <p className="text-gray-700 font-medium mb-8 text-base">
-                    Manage your personal profile, GitHub integration, and core skills.
-                  </p>
                   
                   <div className="bg-white/70 backdrop-blur-2xl border border-white rounded-3xl shadow-2xl p-10 space-y-10">
                     
