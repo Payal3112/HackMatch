@@ -4,7 +4,7 @@ HackMatch is an intelligent, AI-powered matchmaking platform designed to help de
 
 <img width="1900" height="858" alt="image" src="https://github.com/user-attachments/assets/e8c906db-858a-4547-9997-660b7ee89759" />
 <img width="1882" height="871" alt="image" src="https://github.com/user-attachments/assets/1ab50274-c866-4e1d-a556-de14bb1e77fa" />
-![Uploading image.png…]()
+<img width="1890" height="875" alt="image" src="https://github.com/user-attachments/assets/0f9677ad-43bf-41a8-8a13-7bfa8ffb12f3" />
 
 
 
