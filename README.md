@@ -2,7 +2,11 @@
 
 HackMatch is an intelligent, AI-powered matchmaking platform designed to help developers build their dream hackathon teams. By seamlessly combining GitHub-based skill verification with a powerful NVIDIA-backed AI recommendation engine, HackMatch ensures you always find the perfect teammates to ship winning projects.
 
-![HackMatch Overview](frontend/public/hackmatch_landing.png)
+<img width="1900" height="858" alt="image" src="https://github.com/user-attachments/assets/e8c906db-858a-4547-9997-660b7ee89759" />
+<img width="1882" height="871" alt="image" src="https://github.com/user-attachments/assets/1ab50274-c866-4e1d-a556-de14bb1e77fa" />
+![Uploading image.png…]()
+
+
 
 ## ✨ Core Features
 
